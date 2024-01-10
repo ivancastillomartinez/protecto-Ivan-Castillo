@@ -8,7 +8,7 @@
 
 body {
   background: linear-gradient(135deg, #a6ff0071 0%, #D5D8DC 50%,  #69941b  100%);
- }
+}
 
 /*---HEADER---*/
 
@@ -42,6 +42,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
   }
   
 .card {
@@ -52,6 +54,7 @@ h2 {
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -95,7 +98,7 @@ h2 {
 }
 
 .ver-mas-btn:hover {
-  background-color: #0056b3;
+  background-color: #053465;
 }
 
 @media (max-width: 768px) {
@@ -121,11 +124,11 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
-  display: flex;
+ 
 }
 
 .boton:hover {
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 4px 8px #000000;
 }
 
 @media (max-width: 768px) {
@@ -162,11 +165,21 @@ h2 {
 /* QUIENES SOMOS */
 .boxinfo {
   display: flex;
+  padding: 1rem;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  
 }
 
-.boxinfo h3 {
+.boxinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+}
+/* .boxinfo h3 {
   width: 80%;
   margin: 20px;
   align-items: center;
@@ -175,7 +188,7 @@ h2 {
 .boxinfo p {
   width: 80%;
   margin: 20px;
-}
+} */
 
 img.responsive-image {
   width: 30%;
@@ -186,9 +199,10 @@ img.responsive-image:hover {
   transform: scale(1.1) rotate(5deg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .boxinfo {
     flex-direction: column;
+    align-items: center;
   }
 
   hr {
@@ -237,6 +251,35 @@ input[type="submit"]:hover {
   background-color: #ffffff;
   color: #007bff;
 }
+
+/* CONTACTO */
+/* Formulario */
+.formulario {
+  border: 3px solid #000000;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 80%;
+  margin: 3rem auto; 
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+
+
+}
+
+
+
+/* MAPA */
+.wrapper-mapa-index iframe{
+  width: 100%;
+  height: 300px;
+}
+
 
 /* FOOTER */
 
