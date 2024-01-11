@@ -1,0 +1,22 @@
+/* BOTONES */
+
+.boton {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: $c-blanco;
+    background-color: $bc-azul;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  
+    &:hover {
+      box-shadow: 0 4px 8px $bc-negro;
+    }
+  }
+  
+@media (max-width: 768px) {
+    .boton {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,27 @@
+/* CAJAS SERVICIOS */
+/* contenedor */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+
+    &__box {
+        width: 45%;
+        padding: 20px;
+        border: 1px solid $bc-negro;
+        background-color: rgba(255, 255, 255, 0.388);
+        text-align: justify;
+        overflow: hidden;
+        transition: all 0.3s ease;  
+    }
+    
+    &__box:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+
+
