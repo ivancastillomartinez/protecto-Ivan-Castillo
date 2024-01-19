@@ -96,31 +96,3 @@ input {
         font-size: 1.5rem;
     }
 }
-
-
-.ver-mas-btn {
-    padding: 8px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: $bc-azul;
-    color: $c-blanco;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-        background-color: #053465;
-    }
-}
-
-@media (max-width: 768px) {
-    .card {
-    flex-basis: calc(50% - 20px);
-    }
-}
-    
-@media (max-width: 480px) {
-    .card {
-    flex-basis: 100%;
-    }
-}

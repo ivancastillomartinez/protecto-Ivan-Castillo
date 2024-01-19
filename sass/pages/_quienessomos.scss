@@ -1,26 +1,41 @@
 /* QUIENES SOMOS */
 .boxinfo {
+    background: $bc-gris;
     display: flex;
+    border: 1px solid $bc-negro;
+    border-radius: 20px;
     font-size: 1.5rem;
     padding: 1rem;
     flex-direction: column;
     gap: 1rem;
     max-width: 1300px;
     margin: 0 auto;
-    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+
+    &:hover {
+        box-shadow: 0 8px 16px $bc-negro;
+        }
 }
+
 
 img.responsive-image {
-    width: 30%;
+    width: 60%;
+    display: flex;
+    align-content: center;
     transition: all 0.7s ease;
+
+    &:hover {
+        box-shadow: 0 4px 8px $bc-negro;    
+        transform: scale(1.1);
+        }
 }
 
-img.responsive-image:hover {
-    transform: scale(1.1) rotate(5deg);
-}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .boxinfo {
+    font-size: 1rem;
     flex-direction: column;
     align-items: center;
     }

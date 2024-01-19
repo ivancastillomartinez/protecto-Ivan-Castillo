@@ -25,21 +25,21 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ofertas.html">Ofertas</a>
+                                <a class="nav-link active" href="ofertas.html">Ofertas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="servicios.html">Servicios</a>
+                                <a class="nav-link active" href="servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="quienessomos.html">Quiénes Somos</a>
+                                <a class="nav-link active" href="quienessomos.html">Quiénes Somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
                             </li>                 
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline" type="submit">Buscar</button>
+                            <button class="boton" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>
@@ -57,7 +57,6 @@
             <section class="presentacion">
                 <img src="./images/presentacion.jpg" alt="presentacion" class="background-image">
                 <h2>Selecciona tus fechas</h2>
-                    <div class="search-form">
                     <label for="origen">Origen</label>
                     <input type="text" id="origen">
                     <label for="destino">Destino</label>
@@ -78,22 +77,22 @@
                     <div class="card">
                         <img src="./images/amazonas.png" alt="imagen-Chile">
                         <h3>Amazonas. Apasionante y aventurero</h3>
-                        <button class="ver-mas-btn">Ver más</button>
+                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
                     </div>
                     <div class="card">
                         <img src="./images/patagonia.jpg" alt="imagen-Patagonia">
                         <h3>Patagonia Argentina. Un mundo lleno de magia</h3>
-                        <button class="ver-mas-btn">Ver más</button>
+                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
                     </div>
                     <div class="card">
                         <img src="./images/galapagos1.jpg" alt="imagen-Galapagos">
                         <h3>Galápagos. Naturaleza única</h3>
-                        <button class="ver-mas-btn">Ver más</button>
+                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
                     </div>
                     <div class="card">
                         <img src="./images/puerto-madrin.jpg" alt="puerto-madrin">
                         <h3>Puerto Madryn. Avistamiento de cetáceos</h3>
-                        <button class="ver-mas-btn">Ver más</button>
+                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
                     </div>
                 </div>
                 <button onclick="window.location.href='ofertas.html'" class="boton">Seguir Explorando</button>
@@ -101,20 +100,19 @@
         </main>
 
         <footer class="footer">
-            <div>
+            <div class="first-section">
                 <ul>
-                    <li>Local 1: Punta Carretas</li>
-                    <li>Local 2: Montevideo Shopping</li>
-                    <li>Local 3: Aeropuerto Carrasco</li>
-                    <li>Local 4: Tres Cruces</li>
+                    <li>Local 1: Punta Carretas: José Ellauri 350, Montevideo</li> 
+                    <li>Local 2: Montevideo Shopping: Av. Luis A Herrera 1290, Montevideo</li>
+                    <li>Local 3: Aeropuerto Carrasco: Ruta 101, Canelones</li>
+                    <li>Local 4: Tres Cruces: Bv. Gral. Artigas 1825, Montevideo</li>
                 </ul>
             </div>
             <div class="footer__section">
                 <ul class="social-icons">
-                    <li><a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="Youtube"></a></li>
-                    <li><a href="https://faq.whatsapp.com/5913398998672934/"><img src="./images/whatsapp.png" alt="Youtube"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png" alt="Youtube"></a></li>
                 </ul>
             </div>
         </footer>  
