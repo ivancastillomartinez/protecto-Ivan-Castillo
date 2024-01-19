@@ -17,34 +17,42 @@
   
 @media (max-width: 768px) {
     .boton {
-      font-size: 14px;
+      font-size: 0.5rem;
     }
   }
 
-  .ver-mas-btn {
-    background-color: $bc-verde;
-    color: $c-blanco;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-        background-color: $bc-olivo;
-        color: $bc-negro;
-    }
+  
+.boton-seguirbuscando {
+  padding: 12px 24px;
+  margin: 40px 200px;
+  font-size: 16px;
+  color: $c-blanco;
+  background-color: $bc-verde;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  animation: latido 1.5s infinite;
 }
 
-@media (max-width: 768px) {
-    .card {
-    flex-basis: calc(50% - 20px);
-    }
-}
-    
-@media (max-width: 480px) {
-    .card {
-    flex-basis: 100%;
-    }
+@keyframes latido {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px $bc-blanco;
+  }
+  25% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px $bc-blanco;
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 10px $bc-blanco;
+  }
+  75% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px $bc-blanco;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(105, 148, 27, 0.7);
+  }
 }

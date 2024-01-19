@@ -12,18 +12,12 @@ $c-blanco: #ffffff;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    margin: 10px;
+    margin: 8px;
 }
 
 body {
     background: linear-gradient(135deg, $bc-olivo 0%, $bc-gris 50%,  $bc-verde  100%);
 }
-
-/*---HEADER---*/
-
-header {
-    background-color: $bc-gris ;
-} 
 
 ul li {
     list-style: none;
@@ -43,14 +37,4 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 16px;
-}
-
-.nav-item {
-    font-size: 1.5rem;
-    border-radius: 50px;
-    transition: all 0.7s ease;
-
-    &:hover {
-        transform: scale(1.3);
-        }
 }

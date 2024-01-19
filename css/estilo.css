@@ -2,16 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  margin: 10px;
+  margin: 8px;
 }
 
 body {
   background: linear-gradient(135deg, rgba(166, 255, 0, 0.4431372549) 0%, #D5D8DC 50%, #69941b 100%);
-}
-
-/*---HEADER---*/
-header {
-  background-color: #D5D8DC;
 }
 
 ul li {
@@ -32,15 +27,6 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 16px;
-}
-
-.nav-item {
-  font-size: 1.5rem;
-  border-radius: 50px;
-  transition: all 0.7s ease;
-}
-.nav-item:hover {
-  transform: scale(1.3);
 }
 
 /* FOOTER */
@@ -113,34 +99,56 @@ h2 {
 
 @media (max-width: 768px) {
   .boton {
-    font-size: 14px;
+    font-size: 0.5rem;
   }
 }
-.ver-mas-btn {
-  background-color: #69941b;
+.boton-seguirbuscando {
+  padding: 12px 24px;
+  margin: 40px 200px;
+  font-size: 16px;
   color: #ffffff;
-  padding: 8px 20px;
-  border: none;
+  background-color: #69941b;
   border-radius: 5px;
-  font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-.ver-mas-btn:hover {
-  background-color: rgba(166, 255, 0, 0.4431372549);
-  color: #000000;
+  transition: box-shadow 0.3s ease-in-out;
+  animation: latido 1.5s infinite;
 }
 
-@media (max-width: 768px) {
-  .card {
-    flex-basis: calc(50% - 20px);
+@keyframes latido {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #ffffff;
+  }
+  25% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #ffffff;
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #ffffff;
+  }
+  75% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #ffffff;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(105, 148, 27, 0.7);
   }
 }
-@media (max-width: 480px) {
-  .card {
-    flex-basis: 100%;
-  }
+/*---HEADER---*/
+header {
+  background-color: #D5D8DC;
 }
+
+.nav-item {
+  font-size: 1.5rem;
+  transition: all 0.7s ease;
+}
+.nav-item:hover {
+  transform: scale(1.3);
+}
+
 .presentacion {
   position: relative;
   text-align: center;
@@ -155,8 +163,8 @@ h2 {
   position: relative;
   top: 20%;
   left: 50%;
+  width: 52%;
   transform: translateX(-50%);
-  background-color: #D5D8DC;
   padding: 5px;
   border-radius: 20px;
   box-shadow: 0 4px 8px #000000;
@@ -192,13 +200,10 @@ input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .card {
   flex: 0 1 calc(40% - 40px);
-  background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -218,10 +223,9 @@ input {
 }
 .card img {
   width: 97%;
+  height: 80%;
   border-radius: 8px;
   margin-bottom: 10px;
-  flex-grow: 18;
-  transition: all 0.3s ease;
 }
 .card img:hover {
   transform: scale(1.1) rotate(1deg);
@@ -229,21 +233,45 @@ input {
 .card h3 {
   margin-top: 5px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
+.ver-mas-btn {
+  background-color: #69941b;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.ver-mas-btn:hover {
+  background-color: rgba(166, 255, 0, 0.4431372549);
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    flex-basis: 100%;
+    font-size: 0.5rem;
+  }
+}
 /* TARJETAS Index y Ofertas */
 .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .card {
   flex: 0 1 calc(40% - 40px);
-  background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -263,15 +291,48 @@ input {
 }
 .card img {
   width: 97%;
+  height: 80%;
   border-radius: 8px;
   margin-bottom: 10px;
-  flex-grow: 18;
-  transition: all 0.3s ease;
 }
 .card img:hover {
   transform: scale(1.1) rotate(1deg);
 }
+.card h3 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
+.ver-mas-btn {
+  background-color: #69941b;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.ver-mas-btn:hover {
+  background-color: rgba(166, 255, 0, 0.4431372549);
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+  .ver-mas-btn {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    flex-basis: 100%;
+    font-size: 0.5rem;
+  }
+}
 /* QUIENES SOMOS */
 .boxinfo {
   background: #D5D8DC;
@@ -284,7 +345,7 @@ input {
   gap: 1rem;
   max-width: 1300px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 40px;
   align-items: center;
 }
@@ -317,7 +378,6 @@ img.responsive-image:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  gap: 20px;
 }
 .servicios__box {
   width: 45%;
@@ -325,13 +385,40 @@ img.responsive-image:hover {
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 0.388);
   text-align: justify;
-  overflow: hidden;
+  overflow: scroll;
   transition: all 0.3s ease;
 }
 .servicios__box:hover {
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .servicios {
+    flex-basis: calc(50% - 20px);
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .servicios {
+    flex-basis: calc(50% - 20px);
+    font-size: 0.5rem;
+    margin: 5px;
+  }
+}
+.animacion-imagen {
+  width: 100px;
+  height: 100px;
+  animation: moveRight 5s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
 /* CONTACTO */
 /* Formulario */
 .formulario {

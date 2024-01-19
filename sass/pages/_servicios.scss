@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    gap: 20px;
 
     &__box {
         width: 45%;
@@ -13,7 +12,7 @@
         border: 1px solid $bc-negro;
         background-color: rgba(255, 255, 255, 0.388);
         text-align: justify;
-        overflow: hidden;
+        overflow: scroll;
         transition: all 0.3s ease;  
     }
     
@@ -22,6 +21,37 @@
     }
 
 }
+
+@media (max-width: 768px) {
+  .servicios {
+  flex-basis: calc(50% - 20px);
+  font-size: 0.5rem;
+  
+}
+  }
+  
+@media (max-width: 480px) {
+  .servicios {
+    flex-basis: calc(50% - 20px);
+    font-size: 0.5rem;
+    margin: 5px;
+  }
+}
+
+.animacion-imagen {
+    width: 100px;
+    height: 100px;
+    animation: moveRight 5s linear infinite;
+  }
+  
+  @keyframes moveRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
 
 
 
