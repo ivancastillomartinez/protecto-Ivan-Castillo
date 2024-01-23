@@ -327,41 +327,112 @@ main {
   }
 }
 /* QUIENES SOMOS */
-.boxinfo {
-  background: #D5D8DC;
+.cabecera {
+  width: 90%;
   display: flex;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  padding: 1rem;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 1500px;
-  margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  justify-content: center;
   align-items: center;
-}
-.boxinfo:hover {
-  box-shadow: 0 8px 16px #000000;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
 }
 
-img.responsive-image {
-  width: 60%;
+.cabecera h2 {
+  color: #000000;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.cabecera h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #69941b;
+}
+
+.cabecera p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.seccion {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.quienessomos {
   display: flex;
-  align-content: center;
-  transition: all 0.7s ease;
-}
-img.responsive-image:hover {
-  box-shadow: 0 4px 8px #000000;
-  transform: scale(1.1);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 500px) {
-  .boxinfo {
-    font-size: 1rem;
+.quienessomos__imagen {
+  flex: 1;
+  margin-right: 40px;
+  margin-left: 40px;
+  overflow: hidden;
+}
+
+.quienessomos__imagen img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.quienessomos__imagen:hover img {
+  transform: scale(1.2);
+}
+
+.quienessomos__contenido {
+  flex: 1;
+  text-align: justify;
+}
+
+.quienessomos__contenido h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quienessomos__contenido p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .cabecera {
+    padding: 0px 20px;
+  }
+  .cabecera h2 {
+    font-size: 36px;
+  }
+  .cabecera p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .seccion {
+    padding: 0px;
+  }
+  .quienessomos {
+    padding: 20px;
     flex-direction: column;
-    align-items: center;
+  }
+  .quienessomos__imagen {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .quienessomos__contenido {
+    padding: 0px;
+    font-size: 16px;
   }
 }
 /* CAJAS SERVICIOS */
