@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,113 +9,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">TRAVEL</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="ofertas.html">Ofertas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="quienessomos.html">Quiénes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="contacto.html">Contacto</a>
-                            </li>                 
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="boton" type="submit">Buscar</button>
-                        </form>
-                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienessomos.html">Quiénes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="boton" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </header>
-
-        <main>
-            <!-- Portada -->
-            <section class="portada_index">
-            <h1>Agencia de Turismo de Aventura</h1>
-            </section>
-            <!-- AQUI VAN LAS FECHAS PARA RESERVAR (FORMULARIO) -->
-            <section class="presentacion">
-                <img src="./images/presentacion.jpg" alt="presentacion" class="background-image">
-                <h2>Selecciona tus fechas</h2>
-                <div class="search-form">
-                    <label for="origen">Origen</label>
-                    <input type="text" id="origen">
-                    <label for="destino">Destino</label>
-                    <input type="text" id="destino">
-                    <label for="desde">Desde</label>
-                    <input type="date" id="desde">
-                    <label for="hasta">Hasta</label>
-                    <input type="date" id="hasta">
-                    <label for="cantidad_turistas">Turistas</label>
-                    <input type="number" id="cantidad_turistas">
-                    <input class="boton" type="submit" value="Buscar">
-                </div>
-            </section>
-            <section >
-                <h2>DESTINOS POPULARES</h2>
-                <!-- IMAGENES DESTINOS POPULARES -->
-                <div class="container">
-                    <div class="card">
-                        <img src="./images/amazonas.png" alt="imagen-Chile">
-                        <h3>Amazonas. Apasionante y aventurero</h3>
-                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
-                    </div>
-                    <div class="card">
-                        <img src="./images/patagonia.jpg" alt="imagen-Patagonia">
-                        <h3>Patagonia Argentina. Un mundo lleno de magia</h3>
-                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
-                    </div>
-                    <div class="card">
-                        <img src="./images/galapagos1.jpg" alt="imagen-Galapagos">
-                        <h3>Galápagos. Naturaleza única</h3>
-                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
-                    </div>
-                    <div class="card">
-                        <img src="./images/puerto-madrin.jpg" alt="puerto-madrin">
-                        <h3>Puerto Madryn. Avistamiento de cetáceos</h3>
-                        <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
-                    </div>
-                </div>
-            </section>
-            <button onclick="window.location.href='ofertas.html'" class="boton-seguirbuscando">Seguir Explorando</button>            
-        </main>
-
-        <footer class="footer">
-            <div class="first-section">
-                <ul>
-                    <li>Local 1: Punta Carretas: José Ellauri 350, Montevideo</li> 
-                    <li>Local 2: Montevideo Shopping: Av. Luis A Herrera 1290, Montevideo</li>
-                    <li>Local 3: Aeropuerto Carrasco: Ruta 101, Canelones</li>
-                    <li>Local 4: Tres Cruces: Bv. Gral. Artigas 1825, Montevideo</li>
-                </ul>
             </div>
-            <div class="footer__section">
-                <ul class="social-icons">
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png" alt="Youtube"></a></li>
-                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Portada -->
+        <!-- AQUI VAN LAS FECHAS PARA RESERVAR (FORMULARIO) -->
+        <section class="form">
+            <h1 class="banner-text">Agencia de Turismo de Aventura</h1>
+            <div class="form__inputs"><label for="origen">Origen</label>
+                <input class="form-control" type="text" id="origen">
             </div>
-        </footer>  
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+            <div class="form__inputs"><label for="destino">Destino</label>
+                <input class="form-control" type="text" id="destino">
+            </div>
+            <div class="form__inputs"><label for="desde">Desde</label>
+                <input class="form-control" type="date" id="desde">
+            </div>
+            <div class="form__inputs"><label for="hasta">Hasta</label>
+                <input class="form-control" type="date" id="hasta">
+            </div>
+            <div class="form__inputs"><label for="cantidad_turistas">Turistas</label>
+                <input  class="form-control" type="number" style="width: 100px;" id="cantidad_turistas">
+            </div>
+            <input class="boton-buscar" type="submit" value="Buscar">
+        </section>
+        <div class="avion">
+            <img src="./images/avion.png" alt="Imagen" class="animacion-imagen">
+        </div>
+        <section>
+            <h2>DESTINOS POPULARES</h2>
+            <!-- IMAGENES DESTINOS POPULARES -->
+            <div class="container">
+                <div class="card">
+                    <img src="./images/amazonas.png" alt="imagen-Chile">
+                    <h3>Amazonas. Apasionante y aventurero</h3>
+                    <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./images/patagonia.jpg" alt="imagen-Patagonia">
+                    <h3>Patagonia Argentina. Un mundo lleno de magia</h3>
+                    <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./images/galapagos1.jpg" alt="imagen-Galapagos">
+                    <h3>Galápagos. Naturaleza única</h3>
+                    <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./images/puerto-madrin.jpg" alt="puerto-madrin">
+                    <h3>Puerto Madryn. Avistamiento de cetáceos</h3>
+                    <button onclick="window.location.href='ofertas.html'" class="ver-mas-btn">Ver más</button>
+                </div>
+            </div>
+        </section>
+        <div class="d-flex justify-content-center my-3">
+            <button onclick="window.location.href='ofertas.html'" class="boton">Seguir Explorando</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="first-section">
+            <ul>
+                <li>Local 1: Punta Carretas: José Ellauri 350, Montevideo</li>
+                <li>Local 2: Montevideo Shopping: Av. Luis A Herrera 1290, Montevideo</li>
+                <li>Local 3: Aeropuerto Carrasco: Ruta 101, Canelones</li>
+                <li>Local 4: Tres Cruces: Bv. Gral. Artigas 1825, Montevideo</li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png"
+                            alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png"
+                            alt="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png"
+                            alt="Youtube"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

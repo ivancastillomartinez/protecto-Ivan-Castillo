@@ -1,124 +1,72 @@
 // PRESENTACION //
 
-.presentacion {
-    position: relative;
-    text-align: center;
+main {
+    margin-top: 112px;
 }
 
-.background-image {
-    width: 100%;
-    height: 0 auto;
+.banner-text {
+    position: absolute;
+    top: 30px;
 }
 
-.search-form {
+.form {
     position: relative;
-    top: 20%;
-    left: 50%;
-    width: 52%;
-    transform: translateX(-50%);
-    padding: 5px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px $bc-negro;
+    background-image: url(../../images/presentacion.jpg);
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    // padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-}
+    align-items: center;
+    text-align: center;
+  }
 
-label {
-    width: 50%;
-    margin-bottom: 5px;
-}
+.form__inputs {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    
 
-input {
-    width: calc(50% - 10px);
-    margin: 10px;
-    padding: 8px;
-    border: 1px solid $bc-negro;
-    border-radius: 10px;
-}
-
-@media screen and (max-width: 600px) {
-    .search-form {
-    top: 40%;
+    label {    
+        // margin-bottom: 5px;
+        // font-size: 1.5rem;
+        margin-right: 10px;
+        color: $c-blanco;
+        text-shadow: 0 0 3px $bc-negro;
     }
 
     input {
-    width: calc(100% - 10px);
+        // padding: 10px;
+        // margin-bottom: 15px;
+        margin-right: 10px;
+        // border-radius: 10px;
     }
 }
 
-/* TARJETAS Index y Ofertas */
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-    
-.card {
-    flex: 0 1 calc(40% - 40px);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-    box-shadow: 0 4px 8px $bc-negro;
-    transition: box-shadow 0.3s ease-in-out;
-
-    &:hover {
-    box-shadow: 0 8px 16px $bc-negro;
+@media screen and (max-width: 800px) {
+    .form__inputs {
+        font-size: 0.8rem;
     }
 
-    &-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    & img {
-        width: 97%;
-        height: 80%;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    & img:hover {
-        transform: scale(1.1) rotate(1deg);
-    }
-    & h3 {
-        margin-top: 5px;
-        text-align: center;
-        font-size: 1.2rem;
+    input {
+    width: calc(50% - 10px);
+    margin-right: 5px;
     }
 }
 
-.ver-mas-btn {
-    background-color: $bc-verde;
-    color: $c-blanco;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-        background-color: $bc-olivo;
-        color: $bc-negro;
-    }
+.animacion-imagen {
+    width: 100px;
+    height: 100px;
+    animation: moveRight 5s linear infinite;
 }
 
-@media (max-width: 768px) {
-    .card {
-    flex-basis: calc(50% - 20px);
-    font-size: 0.5rem;
+@keyframes moveRight {
+    0% {
+    transform: translateX(-100%);
     }
-}
-    
-@media (max-width: 480px) {
-    .card {
-    flex-basis: 100%;
-    font-size: 0.5rem;
+    100% {
+    transform: translateX(100vw);
     }
 }

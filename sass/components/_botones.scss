@@ -2,7 +2,7 @@
 
 .boton {
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 1rem;
     color: $c-blanco;
     background-color: $bc-verde;
     border: none;
@@ -15,19 +15,18 @@
     }
   }
   
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .boton {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
   }
 
   
-.boton-seguirbuscando {
-  padding: 12px 24px;
-  margin: 40px 200px;
-  font-size: 16px;
-  color: $c-blanco;
+.boton-buscar {
+  padding: 6px 12px;
+  font-size: 1rem;
   background-color: $bc-verde;
+  color: $c-negro;
   border-radius: 5px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
@@ -37,22 +36,59 @@
 @keyframes latido {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 10px $bc-blanco;
+    box-shadow: 0 0 5px $bc-blanco;
   }
   25% {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px $bc-blanco;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px $bc-blanco;
   }
   50% {
     transform: scale(1);
-    box-shadow: 0 0 10px $bc-blanco;
+    box-shadow: 0 0 5px $bc-blanco;
   }
   75% {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px $bc-blanco;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px $bc-blanco;
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(105, 148, 27, 0.7);
+    box-shadow: 0 0 5px $bc-blanco;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .boton-buscar {
+  font-size: 1rem;
+  }
+}
+  
+@media (max-width: 400px) {
+  .boton-buscar {
+  font-size: 0.8rem;
+  padding: 0;
+  }
+}
+
+.ver-mas-btn {
+  background-color: $bc-verde;
+  color: $c-blanco;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+      background-color: $bc-olivo;
+      color: $bc-negro;
+  }
+}
+
+@media (max-width: 768px) {
+  .ver-mas-btn {
+    font-size: 0.8rem;
+    padding: 2px;
   }
 }
