@@ -4,57 +4,73 @@ main {
     margin-top: 112px;
 }
 
-.banner-text {
-    position: absolute;
-    top: 30px;
-}
+// .banner-text {
+//     position: absolute;
+//     top: 30px;
+// }
 
-.form {
-    position: relative;
-    background-image: url(../../images/presentacion.jpg);
-    height: 1000px;
+.box-booking {
+    //position: relative;
+    background-image: url(../../images/raimond-klavins-xAqrT-279UA-unsplash.jpg);
+    //height: 1000px;
     background-size: cover;
     background-position: center;
     // padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 30px;
     align-items: center;
-    text-align: center;
-  }
+    //text-align: center;
+}
+
+.form-booking {
+    padding: 20px;
+    background-color: rgba($color: $bc-blanco, $alpha: 0.3);
+    border-radius: 10px;
+}
 
 .form__inputs {
-    margin-top: 0px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    
 
-    label {    
+
+
+    label {
         // margin-bottom: 5px;
         // font-size: 1.5rem;
+        min-width: 100px;
         margin-right: 10px;
         color: $c-blanco;
         text-shadow: 0 0 3px $bc-negro;
     }
 
-    input {
-        // padding: 10px;
-        // margin-bottom: 15px;
-        margin-right: 10px;
-        // border-radius: 10px;
-    }
+}
+
+.form-booking-box-btn {
+    display: flex;
+    justify-content: end;
 }
 
 @media screen and (max-width: 800px) {
+    .box-booking{
+        flex-direction: column;
+   
+        h1 {
+            text-align: center;
+        }
+    }
     .form__inputs {
         font-size: 0.8rem;
     }
 
     input {
-    width: calc(50% - 10px);
-    margin-right: 5px;
+        width: calc(50% - 10px);
+        margin-right: 5px;
     }
 }
+
 
 .animacion-imagen {
     width: 100px;
@@ -64,9 +80,10 @@ main {
 
 @keyframes moveRight {
     0% {
-    transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     100% {
-    transform: translateX(100vw);
+        transform: translateX(100vw);
     }
 }

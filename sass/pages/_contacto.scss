@@ -1,9 +1,11 @@
 /* CONTACTO */
 /* Formulario */
+
 .formulario {
-    border: 3px solid #000000;
+    border: 2px solid rgba($color: $bc-verde, $alpha: 0.5);
     border-radius: 20px;
-    padding: 1rem;
+    background-color: rgba($color: $bc-verde, $alpha: 0.2);
+    padding: 1.5rem;
     width: 80%;
     margin: 3rem auto; 
 }

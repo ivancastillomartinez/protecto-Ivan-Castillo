@@ -26,6 +26,7 @@ body {
 
 body {
     background: linear-gradient(135deg, $bc-olivo 0%, $bc-gris 50%, $bc-verde 100%);
+    overflow-x: hidden;
 }
 
 ul li {

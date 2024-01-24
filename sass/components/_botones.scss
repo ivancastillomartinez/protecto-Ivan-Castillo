@@ -26,11 +26,13 @@
   padding: 6px 12px;
   font-size: 1rem;
   background-color: $bc-verde;
-  color: $c-negro;
+  color: $c-blanco;
   border-radius: 5px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
+  &.latido{
   animation: latido 1.5s infinite;
+}
 }
 
 @keyframes latido {

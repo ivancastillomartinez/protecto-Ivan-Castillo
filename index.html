@@ -54,24 +54,28 @@
     <main>
         <!-- Portada -->
         <!-- AQUI VAN LAS FECHAS PARA RESERVAR (FORMULARIO) -->
-        <section class="form">
+        <section class="box-booking">
             <h1 class="banner-text">Agencia de Turismo de Aventura</h1>
-            <div class="form__inputs"><label for="origen">Origen</label>
-                <input class="form-control" type="text" id="origen">
+            <div class="form-booking">
+                <div class="form__inputs"><label for="origen">Origen</label>
+                    <input class="form-control" type="text" id="origen">
+                </div>
+                <div class="form__inputs"><label for="destino">Destino</label>
+                    <input class="form-control" type="text" id="destino">
+                </div>
+                <div class="form__inputs"><label for="desde">Desde</label>
+                    <input class="form-control" type="date" id="desde">
+                </div>
+                <div class="form__inputs"><label for="hasta">Hasta</label>
+                    <input class="form-control" type="date" id="hasta">
+                </div>
+                <div class="form__inputs"><label for="cantidad_turistas">Turistas</label>
+                    <input class="form-control" type="number" id="cantidad_turistas">
+                </div>
+                <div class="form-booking-box-btn">
+                <input class="boton-buscar btn" type="submit" value="Buscar">
+                </div>
             </div>
-            <div class="form__inputs"><label for="destino">Destino</label>
-                <input class="form-control" type="text" id="destino">
-            </div>
-            <div class="form__inputs"><label for="desde">Desde</label>
-                <input class="form-control" type="date" id="desde">
-            </div>
-            <div class="form__inputs"><label for="hasta">Hasta</label>
-                <input class="form-control" type="date" id="hasta">
-            </div>
-            <div class="form__inputs"><label for="cantidad_turistas">Turistas</label>
-                <input  class="form-control" type="number" style="width: 100px;" id="cantidad_turistas">
-            </div>
-            <input class="boton-buscar" type="submit" value="Buscar">
         </section>
         <div class="avion">
             <img src="./images/avion.png" alt="Imagen" class="animacion-imagen">
