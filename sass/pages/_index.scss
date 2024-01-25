@@ -1,27 +1,17 @@
-// PRESENTACION //
+// Cabezal y Selección de fechas
 
 main {
     margin-top: 112px;
 }
 
-// .banner-text {
-//     position: absolute;
-//     top: 30px;
-// }
-
 .box-booking {
-    //position: relative;
-    background-image: url(../../images/raimond-klavins-xAqrT-279UA-unsplash.jpg);
-    //height: 1000px;
+    background-image: url(../../images/presentacion.jpg);
     background-size: cover;
     background-position: center;
-    // padding: 20px;
     display: flex;
-    //flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 30px;
     align-items: center;
-    //text-align: center;
 }
 
 .form-booking {
@@ -35,11 +25,7 @@ main {
     display: flex;
     align-items: center;
 
-
-
     label {
-        // margin-bottom: 5px;
-        // font-size: 1.5rem;
         min-width: 100px;
         margin-right: 10px;
         color: $c-blanco;
@@ -54,13 +40,14 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-    .box-booking{
+    .box-booking {
         flex-direction: column;
-   
+
         h1 {
             text-align: center;
         }
     }
+
     .form__inputs {
         font-size: 0.8rem;
     }
@@ -71,8 +58,9 @@ main {
     }
 }
 
-
+// IMAGEN ANIMADA
 .animacion-imagen {
+    margin-top: 10px;
     width: 100px;
     height: 100px;
     animation: moveRight 5s linear infinite;

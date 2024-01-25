@@ -1,5 +1,4 @@
-/* CONTACTO */
-/* Formulario */
+// Formulario de Contacto
 
 .formulario {
     border: 2px solid rgba($color: $bc-verde, $alpha: 0.5);
@@ -7,19 +6,19 @@
     background-color: rgba($color: $bc-verde, $alpha: 0.2);
     padding: 1.5rem;
     width: 80%;
-    margin: 3rem auto; 
+    margin: 3rem auto;
+
+    &-label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }
 
-
-.form-label {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-  /* MAPA */
-.wrapper-mapa-index iframe{
+/* MAPA */
+.wrapper-mapa-index iframe {
     width: 100%;
     height: 300px;
+    margin-bottom: 20px;
 }
